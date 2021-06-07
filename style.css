@@ -1,7 +1,97 @@
-p { max-width: 60ch; }
+p {
+  max-width: 60ch;
+}
 
-   
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 /* Har du brug for en "responsive" fontstørrelse, så kan du bruge dette værktøj: https://xgkft.csb.app/
 Vælg en viewport-rækkevidde (kunne fx være 320px til 1200px) samt en minimum/maksimum skriftstørrelse (fx 1rem / 3.5rem)
 Kopier og indsæt koden til det element, der skal have en "responsive" størrelse:h2 { font-size: clamp(1rem, 0.0909rem + 4.5455vw, 3.5rem); } */
+#puzzle {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 50vw 50vw;
+}
 
+#element1 {
+  background-image: url(billeder/Test.svg);
+  background-size: cover;
+}
+
+#element2 {
+  background-image: url(billeder/Test.svg);
+  background-size: cover;
+}
+#element3 {
+  background-image: url(billeder/Test.svg);
+  background-size: cover;
+}
+#element4 {
+  background-image: url(billeder/Test.svg);
+  background-size: cover;
+}
+
+.left {
+  animation-name: left_kf;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+@keyframes left_kf {
+  from {
+    transform: translateX(0vw);
+  }
+  to {
+    transform: translateX(-100vw);
+  }
+}
+
+.right {
+  animation-name: right_kf;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+@keyframes right_kf {
+  from {
+    transform: translateX(0vw);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+
+.up {
+  animation-name: up_kf;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+@keyframes up_kf {
+  from {
+    transform: translateY(0vw);
+  }
+  to {
+    transform: translateY(-100vw);
+  }
+}
+
+.down {
+  animation-name: down_kf;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+@keyframes down_kf {
+  from {
+    transform: translateY(0vw);
+  }
+  to {
+    transform: translateY(100vw);
+  }
+}
