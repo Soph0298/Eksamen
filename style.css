@@ -1,0 +1,7 @@
+p { max-width: 60ch; }
+
+   
+/* Har du brug for en "responsive" fontstørrelse, så kan du bruge dette værktøj: https://xgkft.csb.app/
+Vælg en viewport-rækkevidde (kunne fx være 320px til 1200px) samt en minimum/maksimum skriftstørrelse (fx 1rem / 3.5rem)
+Kopier og indsæt koden til det element, der skal have en "responsive" størrelse:h2 { font-size: clamp(1rem, 0.0909rem + 4.5455vw, 3.5rem); } */
+
