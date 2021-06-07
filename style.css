@@ -1,5 +1,10 @@
-p {
-  max-width: 60ch;
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0d300;
 }
 
 img {
@@ -9,13 +14,20 @@ img {
   display: block;
 }
 
-* {
-  box-sizing: border-box;
+p {
+  max-width: 60ch;
+}
+/* JAVASCRIPT BELOW------ */
+
+#button {
+  height: 60px;
+  width: 150px;
+  position: absolute;
+  left: 27%;
+  top: 36%;
+  z-index: 5;
 }
 
-/* Har du brug for en "responsive" fontstørrelse, så kan du bruge dette værktøj: https://xgkft.csb.app/
-Vælg en viewport-rækkevidde (kunne fx være 320px til 1200px) samt en minimum/maksimum skriftstørrelse (fx 1rem / 3.5rem)
-Kopier og indsæt koden til det element, der skal have en "responsive" størrelse:h2 { font-size: clamp(1rem, 0.0909rem + 4.5455vw, 3.5rem); } */
 #puzzle {
   display: grid;
   grid-template-columns: 50vw 50vw;
@@ -25,6 +37,8 @@ Kopier og indsæt koden til det element, der skal have en "responsive" størrels
 #element1 {
   background-image: url(billeder/Test.svg);
   background-size: cover;
+  /* position: absolute; */
+  z-index: 1;
 }
 
 #element2 {
@@ -38,6 +52,13 @@ Kopier og indsæt koden til det element, der skal have en "responsive" størrels
 #element4 {
   background-image: url(billeder/Test.svg);
   background-size: cover;
+}
+
+#element_text {
+  background-size: cover;
+  z-index: 2;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 .left {
@@ -70,7 +91,7 @@ Kopier og indsæt koden til det element, der skal have en "responsive" størrels
 
 .up {
   animation-name: up_kf;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: both;
 }
 @keyframes up_kf {
@@ -78,13 +99,13 @@ Kopier og indsæt koden til det element, der skal have en "responsive" størrels
     transform: translateY(0vw);
   }
   to {
-    transform: translateY(-100vw);
+    transform: translateY(-150vw);
   }
 }
 
 .down {
   animation-name: down_kf;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: both;
 }
 @keyframes down_kf {
@@ -92,6 +113,36 @@ Kopier og indsæt koden til det element, der skal have en "responsive" størrels
     transform: translateY(0vw);
   }
   to {
-    transform: translateY(100vw);
+    transform: translateY(150vw);
   }
+}
+
+.puls {
+  animation-name: puls_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes puls_kf {
+  0% {
+    transform: scale(97%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+/* Har du brug for en "responsive" fontstørrelse, så kan du bruge dette værktøj: https://xgkft.csb.app/
+Vælg en viewport-rækkevidde (kunne fx være 320px til 1200px) samt en minimum/maksimum skriftstørrelse (fx 1rem / 3.5rem)
+Kopier og indsæt koden til det element, der skal have en "responsive" størrelse:h2 { font-size: clamp(1rem, 0.0909rem + 4.5455vw, 3.5rem); } */
+
+/* CV SIDEN OM MIG ------------------------*/
+
+cv.html body {
+  background-image: url(billeder/cv_1.jpg);
 }
