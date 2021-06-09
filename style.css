@@ -20,10 +20,6 @@ img {
   display: block;
 }
 
-#frontpage_behind {
-  margin-top: -50vw;
-}
-
 p {
   max-width: 60ch;
 }
@@ -33,6 +29,14 @@ nav ul li {
   color: white;
 }
 
+/* TEMAER FORSIDE BELOW --------------------*/
+#temaer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+#tema02 {
+}
 /* CV SIDE BELOW --------------- */
 #cv_body {
   background-color: black;
