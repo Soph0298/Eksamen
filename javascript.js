@@ -31,14 +31,3 @@ function hideElements() {
   document.querySelector(".orange2").classList.add("puls");
   document.querySelector(".figur2").classList.add("puls2");
 }
-
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector("nav");
-
-hamburger.addEventListener("click", mobilMenu);
-
-function mobilMenu() {
-  console.log("burgermenu");
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-}
