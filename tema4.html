@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -31,49 +36,73 @@
           <span class="bar"></span>
         </div>
       </div>
-    </header>
-    <main>
       <section id="hero_section_04">
         <h1>04 Animation</h1>
       </section>
-
-      <div class="orangeblok"></div>
-
+    </header>
+    <main>
       <section class="beskrivelse_section">
         <img src="Billeder/orangedot.png" alt="" />
         <section class="section_wrapper">
-          <h2>Beskrivelse af Tema04</h2>
+          <h2>
+            Beskrivelse af Tema 04 <br />
+            Grundlæggende animation
+          </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Consectetur eligendi atque, nesciunt consequuntur id cumque. Facilis
-            fuga error sit, distinctio ut numquam dignissimos incidunt placeat
-            quis hic voluptates accusantium non quos, suscipit nulla ipsum sequi
-            eligendi? Quaerat quod in asperiores nam iure debitis quidem, ex
-            expedita sunt, dignissimos inventore possimus culpa tempora
-            reiciendis at animi. Necessitatibus, hic enim quia molestiae eum ex
-            delectus debitis voluptates, impedit quibusdam aliquid alias sed
-            laborum nihil nisi? Ullam, voluptas odio laborum quaerat consectetur
-            facilis!
+            I Tema 04 afleverede vi to opgaver. Assetliste/dokumentationsliste
+            og en website med et klik-spil. Spillets ide og koncept blev
+            udviklet med hjælp fra en Cross Method, til at få ideerne igang.
+            Dernæst lavede jeg en papir prototype af spillet, så jeg tidligt i
+            processen kunne opdage fejl og allerede teste produktet. Sideløbende
+            lavede jeg et aktivitetsdiagram, som viser hvilke actions der sker i
+            spillet, når man udfører en konkret handling. Efter en peer-to-peer
+            review af prototypen og aktivitetsdiagrammet, kunne jeg begynde med
+            designet af spillet. Her benyttede jeg mig af desk-research for at
+            finde et eksisterende design og herefter personliggøre det. Da
+            designet var på plads startede jeg med at sætte spillet op i html og
+            css. I html’en satte jeg spil-elementerne op i en container og en
+            sprite, så jeg derefter kunne tilføje mit css og mine
+            css-animationer. Ved hjælp af et state-machine-diagram, kunne jeg
+            bevarer overblikket da jeg tilføjede javascripten. I javascripten
+            har jeg b.lal. benyttet mig at EventListeners og ClassList for at få
+            spillet til at udføre en bestemt handling, når man klikkede på et
+            bestemt element. Til slut i temaet afholde vi en digital fernisering
+            hvor mine medstuderende spillede/testede spillet og gav mig feedback
+            ved hjælp af et online survey-reseach.
           </p>
         </section>
       </section>
 
       <section class="content_section">
         <section class="content">
-          <h3>moodborad</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
-            consequatur id exercitationem perferendis tempore aut eligendi
-            beatae asperiores reiciendis deserunt, consectetur laudantium culpa
-            ratione quis, impedit molestias excepturi. Fuga possimus laudantium
-            officiis. Voluptates autem magnam placeat molestias totam
-            consectetur dolorem velit illo quisquam rerum omnis veritatis,
-            quibusdam a ratione quod!
-          </p>
+          <div class="text_wrapper">
+            <h3>Karakterdesign:</h3>
+            <p>
+              I spillets karakter design har jeg lagt vægt stor på vægt på
+              figurenes former. Den onde i spillet er bygget op i en trekantet
+              facon mens de andre “gode” figurer er bygget op i runde former.
+               Mine spil-figurer er assymetriske for at undgå twinning og for at
+              gøre designet mere levende.
+            </p>
+          </div>
+          <img src="billeder/Blackdot.png" alt="" />
+          <div class="text_wrapper">
+            <h3>moodbord</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+              consequatur id exercitationem perferendis tempore aut eligendi
+              beatae asperiores reiciendis deserunt, consectetur laudantium
+              culpa ratione quis, impedit molestias excepturi. Fuga possimus
+              laudantium officiis. Voluptates autem magnam placeat molestias
+              totam consectetur dolorem velit illo quisquam rerum omnis
+              veritatis, quibusdam a ratione quod!
+            </p>
+          </div>
           <img src="billeder/Blackdot.png" alt="" />
         </section>
       </section>
     </main>
     <script src="burger.js"></script>
+    <script src="java04.js"></script>
   </body>
 </html>

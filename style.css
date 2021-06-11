@@ -34,6 +34,10 @@ h3 {
   font-size: clamp(1.5rem, -2rem + 8vw, 2rem);
 }
 
+p {
+  font-size: 1.8rem;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -43,6 +47,7 @@ img {
 
 p {
   max-width: 60ch;
+  line-height: 1.5;
 }
 /* TEMAER FORSIDE BELOW --------------------*/
 
@@ -217,11 +222,6 @@ a {
   text-decoration: none;
 }
 
-header {
-  position: sticky;
-  top: 0;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -229,6 +229,8 @@ nav {
   padding: 1rem 1.5rem;
   background-color: rgb(240, 239, 239);
   box-shadow: 0 10px 27px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
 }
 
 .hamburger {
@@ -501,7 +503,34 @@ a:hover {
     transform: scale(100%);
   }
 }
+@media (min-width: 800px) {
+  .dropdown {
+    animation-name: dropdown_kf;
+    animation-duration: 0.6s;
+    animation-fill-mode: both;
+  }
 
+  @keyframes dropdown_kf {
+    from {
+      transform: translateX(-100vw);
+      /* rotate: -145deg; */
+      /* scale: 0; */
+    }
+  }
+  .bringleft {
+    animation-name: bringleft_kf;
+    animation-duration: 0.6s;
+    animation-fill-mode: both;
+  }
+
+  @keyframes bringleft_kf {
+    from {
+      transform: translateX(100vw);
+      /* rotate: -145deg; */
+      /* scale: 0; */
+    }
+  }
+}
 /* __________SLUT MED JAVASCRIPT INTO---- */
 
 /* MOBILE ABOWE --- +700px BELOW --------------------------------------*/
@@ -560,27 +589,50 @@ a:hover {
     grid-template-columns: 2fr 1fr;
     margin-right: 10rem;
     margin-left: 10rem;
+    gap: 5rem;
   }
 }
 
 #hero_section_02,
 #hero_section_03,
 #hero_section_04,
-#hero_section_05 {
-  background-image: url(billeder/images.jpeg);
+#hero_section_05,
+#hero_section_CV {
   background-size: cover;
   text-align: center;
   line-height: 4;
+  color: white;
+}
+
+#hero_section_02 {
+  background-image: url(billeder/_Web02.png);
+}
+
+#hero_section_03 {
+  background-image: url(billeder/_UX03.png);
+}
+#hero_section_04 {
+  background-image: url(billeder/_Ani04.png);
+}
+
+#hero_section_05 {
+  background-image: url(billeder/_Indhold05.png);
+}
+#hero_section_CV {
+  background-image: url(billeder/_cvsophia.png);
 }
 
 .orangeblok {
   background-color: var(--orange);
   height: 2vw;
 }
-
 .beskrivelse_section,
 .beskrivelse_section .section_wrapper,
 .content_section .content1 {
   display: grid;
   gap: 10px;
+}
+
+.beskrivelse_section h2 {
+  font-size: clamp(2rem, -4rem + 16vw, 2.3rem);
 }
