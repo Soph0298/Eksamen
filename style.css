@@ -16,7 +16,6 @@ main {
     minmax(1rem, 1fr)
     minmax(auto, 1000px)
     minmax(1rem, 1fr);
-  gap: 1rem 0;
 }
 
 main > * {
@@ -508,6 +507,7 @@ a:hover {
 /* MOBILE ABOWE --- +700px BELOW --------------------------------------*/
 
 @media (min-width: 700px) {
+  /* FORSIDE +700  -----------*/
   #puzzle {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -546,22 +546,41 @@ a:hover {
   #tema05 .hvid1 {
     margin-left: 95px;
   }
+  /* +700px FORSIDE SLUT-----------*/
+
+  /*+700 TEMA02 ------------------_*/
+  .beskrivelse_section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
 }
 
-/* .tema2_wrapper {
-  display: grid;
-  gap: 30px;
+#hero_section_02,
+#hero_section_03,
+#hero_section_04,
+#hero_section_05 {
+  background-image: url(billeder/images.jpeg);
+  background-size: cover;
+  text-align: center;
+  line-height: 4;
 }
 
-.content_wrapper,
-.Content1 {
+.orangeblok {
+  background-color: var(--orange);
+  height: 2vw;
+}
+
+.beskrivelse_section,
+.beskrivelse_section .section_wrapper,
+.content_section .content1 {
   display: grid;
   gap: 10px;
-}
-
-.intro_tekst {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-} */
-
 }
