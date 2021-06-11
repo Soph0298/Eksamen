@@ -16,6 +16,7 @@ main {
     minmax(1rem, 1fr)
     minmax(auto, 1000px)
     minmax(1rem, 1fr);
+  margin-bottom: 50px;
 }
 
 main > * {
@@ -590,6 +591,12 @@ a:hover {
     margin-right: 10rem;
     margin-left: 10rem;
     gap: 5rem;
+  }
+  /*+700 TEMA04 ------------------_*/
+
+  #baggrundsbilleder,
+  #baggrundsdesigntekst {
+    grid-column: 1/3;
   }
 }
 
