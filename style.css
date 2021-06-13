@@ -32,7 +32,11 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1.5rem, -2rem + 8vw, 2rem);
+  font-size: clamp(1.5rem, -2rem + 8vw, 3rem);
+}
+
+h4 {
+  font-size: clamp(1.5rem, -2rem + 8vw, 2.3rem);
 }
 
 p {
@@ -514,8 +518,6 @@ a:hover {
   @keyframes dropdown_kf {
     from {
       transform: translateX(-100vw);
-      /* rotate: -145deg; */
-      /* scale: 0; */
     }
   }
   .bringleft {
@@ -639,12 +641,20 @@ a:hover {
   height: 2vw;
 }
 .beskrivelse_section,
-.beskrivelse_section .section_wrapper,
 .content_section .content1 {
   display: grid;
-  gap: 10px;
+  gap: 3rem;
+}
+
+.beskrivelse_section .section_wrapper {
+  display: grid;
+  gap: 1rem;
+}
+
+#temaer .beskrivelse_section h2 {
+  font-size: clamp(2rem, -4rem + 16vw, 2.3rem);
 }
 
 .beskrivelse_section h2 {
-  font-size: clamp(2rem, -4rem + 16vw, 2.3rem);
+  font-size: clamp(1.9rem, -4rem + 16vw, 4rem);
 }
