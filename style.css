@@ -527,8 +527,6 @@ a:hover {
   @keyframes bringleft_kf {
     from {
       transform: translateX(100vw);
-      /* rotate: -145deg; */
-      /* scale: 0; */
     }
   }
 }
@@ -611,6 +609,10 @@ a:hover {
   color: white;
 }
 
+.content a {
+  color: var(--orange);
+  text-align: start;
+}
 #hero_section_02 {
   background-image: url(billeder/_Web02.png);
 }
@@ -620,6 +622,9 @@ a:hover {
 }
 #hero_section_04 {
   background-image: url(billeder/_Ani04.png);
+}
+.demo {
+  grid-column: 1/3;
 }
 
 #hero_section_05 {
