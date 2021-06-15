@@ -389,7 +389,7 @@ a {
 }
 
 #element1 {
-  background-image: url(billeder/Artboard\ –\ 2.png);
+  background-image: url(billeder/1.jpg);
   background-size: cover;
   aspect-ratio: 1/1;
   /* Dette kan jeg skrive som alternativ til aspect-ratio
@@ -398,15 +398,15 @@ a {
 }
 
 #element2 {
-  background-image: url(billeder/Artboard\ –\ 3.png);
+  background-image: url(billeder/2.jpg);
   background-size: cover;
 }
 #element3 {
-  background-image: url(billeder/Artboard\ –\ 4.png);
+  background-image: url(billeder/3.jpg);
   background-size: cover;
 }
 #element4 {
-  background-image: url(billeder/Artboard\ –\ 5.png);
+  background-image: url(billeder/4.jpg);
   background-size: cover;
 }
 #element5 {
