@@ -8,19 +8,14 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Source+Sans+Pro&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header>
       <nav>
-        <a href="index.html" class="logo">Portfolio</a>
+        <a href="index.html" class="logo">Portfolio </a>
         <ul>
           <li><a href="tema2.html">Web</a></li>
           <li><a href="tema3.html">UX</a></li>
@@ -37,12 +32,12 @@
         </div>
       </div>
     </header>
-    <section id="hero_section_04">
+    <section id="hero_section_04" class="dropdown">
       <h1>04 Animation</h1>
     </section>
     <main>
       <section class="beskrivelse_section">
-        <img src="Billeder/orangedot.png" alt="" />
+        <img src="Billeder/orangedot.png" alt="" class="border" />
         <section class="section_wrapper">
           <h2>
             Beskrivelse af Tema 04 <br />
@@ -75,6 +70,12 @@
 
       <section class="content_section">
         <section class="content">
+          <div id="demo" class="text_wrapper">
+            <h3>Prøv spillet og se designdokumentationen: <br /></h3>
+            <a href="http://sophiacannon.dk/kea/04_animation/spil/home.html"
+              ><img src="Billeder/demo_spil.png" alt="Spil spillet"
+            /></a>
+          </div>
           <div class="text_wrapper">
             <h3>Karakterdesign:</h3>
             <p>
@@ -85,7 +86,11 @@
               gøre designet mere levende.
             </p>
           </div>
-          <img src="billeder/karakterdesign.png" alt="karakterdesign" />
+          <img
+            src="billeder/karakterdesign.png"
+            alt="karakterdesign"
+            class="border"
+          />
           <div class="text_wrapper" id="baggrundsdesigntekst">
             <h3>Baggrundsdesign:</h3>
             <p>
@@ -105,6 +110,7 @@
             id="baggrundsbilleder"
             src="billeder/Baggrunddesign.png"
             alt="Baggrundsdesign"
+            class="border"
           />
           <div class="text_wrapper">
             <h3>UI-elementer:</h3>
@@ -122,7 +128,11 @@
               klikke på det.
             </p>
           </div>
-          <img src="billeder/ui-elementer.png" alt="Ui elementer" />
+          <img
+            src="billeder/ui-elementer.png"
+            alt="Ui elementer"
+            class="border"
+          />
           <div class="text_wrapper">
             <h3>CC-animation og Javascript:</h3>
             <p>
@@ -137,8 +147,8 @@
               følelse af at de kastede savene og hjerterne mod havfruen.
             </p>
           </div>
-          <img src="billeder/Javascript.png" alt="Javascript" />
-          <div class="text_wrapper">
+          <img src="billeder/Javascript.png" alt="Javascript" class="border" />
+          <div id="feed" class="text_wrapper">
             <h3>Feedback:</h3>
             <p>
               Resultaterne fra mit online survey-spørgeskema var meget entydige.
@@ -153,18 +163,14 @@
               målgruppen og hvilket Device de bruger digitalt.
             </p>
           </div>
-          <img src="billeder/Baggrunddesign.png" alt="Baggrundsdesign" />
-
-          <div class="demo">
-            <h3>Prøv spillet og se designdokumentationen:</h3>
-            <a href="http://sophiacannon.dk/kea/04_animation/spil/home.html"
-              ><img src="Billeder/demo_spil.png" alt="Spil spillet"
-            /></a>
-          </div>
         </section>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      Portfolio eksamen <br />
+      Sophia Cannon <br />
+      Juni 2021
+    </footer>
     <script src="burger.js"></script>
     <script src="java04.js"></script>
   </body>

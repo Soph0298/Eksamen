@@ -4,25 +4,21 @@
   box-sizing: border-box;
 }
 
-body {
-  background-image: url(billeder/stribes.jpg);
-}
-
 html {
   --orange: #ffba00;
   font-size: 62.5%;
-  font-family: GothamThin;
+  font-family: "Rajdhani", sans-serif;
 }
 
 main {
+  background-image: url(billeder/stribes.jpg);
   display: grid;
   grid-template-columns:
-    minmax(1rem, 1fr)
-    minmax(auto, 1000px)
-    minmax(1rem, 1fr);
+    minmax(0.5rem, 1fr)
+    minmax(auto, 1200px)
+    minmax(0.5rem, 1fr);
   margin-bottom: 50px;
 }
-
 main > * {
   grid-column: 2;
 }
@@ -54,9 +50,25 @@ img {
   display: block;
 }
 
+.border {
+  border: 1rem solid #fff;
+  box-shadow: 1px 1px 40px #888;
+  background: rgb(236, 236, 236);
+}
+
 p {
   max-width: 60ch;
   line-height: 1.5;
+}
+
+footer {
+  height: 100px;
+  background-color: var(--orange);
+  text-align: center;
+  font-size: 1.7rem;
+  color: white;
+  line-height: 2;
+  box-shadow: 3px 3px 8px #888888;
 }
 /* TEMAER FORSIDE BELOW --------------------*/
 
@@ -78,7 +90,7 @@ p {
 #tema05 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 #tema02 .knap,
@@ -98,7 +110,7 @@ p {
 }
 
 #temaer h3 {
-  line-height: 2;
+  line-height: 1.2;
 }
 /*TEMA 02 CSS-----------*/
 #tema02 .orangebox1 {
@@ -171,6 +183,7 @@ p {
 
 #tema05 {
   background-color: var(--orange);
+  margin: 0 -200px;
 }
 
 #tema05 .hvid1 {
@@ -189,7 +202,7 @@ p {
 
 #tema05 .orangebox1 {
   background-color: white;
-  grid-row: 4/5;
+  grid-row: 3/4;
   grid-column: 2/4;
   height: 5px;
   width: 100%;
@@ -206,8 +219,7 @@ p {
   grid-column: 4/7;
   grid-row: 2/3;
   text-align: center;
-  background-color: var(--orange);
-  margin-right: -15px;
+  color: var(--orange);
 }
 #temaCV .cv_billede {
   grid-column: 1/4;
@@ -583,6 +595,12 @@ nav a:hover {
     margin-left: 10rem;
     gap: 5rem;
   }
+
+  .content .text_wrapper {
+    background-color: white;
+    box-shadow: 1px 1px 40px #888;
+    padding: 4rem;
+  }
   /*+700 TEMA04 ------------------_*/
 
   #baggrundsbilleder,
@@ -591,12 +609,22 @@ nav a:hover {
   }
 }
 
+#feed {
+  grid-column: 1/3;
+}
+
+#demo {
+  grid-column: 1/3;
+}
+
 #hero_section_02,
 #hero_section_03,
 #hero_section_04,
 #hero_section_05,
 #hero_section_CV {
-  background-size: cover;
+  height: 120px;
+  background-color: var(--orange);
+  box-shadow: 3px 3px 8px #888888;
   text-align: center;
   line-height: 2;
   color: white;
@@ -607,28 +635,7 @@ nav a:hover {
   color: var(--orange);
   text-align: start;
 }
-#hero_section_02 {
-  background-image: url(billeder/_Web02.jpg);
-  height: 122px;
-}
 
-#hero_section_03 {
-  background-image: url(billeder/_UX03.png);
-}
-
-#hero_section_04 {
-  background-image: url(billeder/_Ani04.png);
-}
-.demo {
-  grid-column: 1/3;
-}
-#hero_section_05 {
-  background-image: url(billeder/_Indhold05.png);
-}
-
-#hero_section_CV {
-  background-image: url(billeder/_cvsophia.png);
-}
 .orangeblok {
   background-color: var(--orange);
   height: 2vw;
@@ -641,14 +648,25 @@ nav a:hover {
 .beskrivelse_section .section_wrapper {
   display: grid;
   gap: 1rem;
+  background-color: white;
+  box-shadow: 1px 1px 40px #888;
+  padding: 4rem;
 }
 #temaer .beskrivelse_section h2 {
   font-size: clamp(2rem, -4rem + 16vw, 2.3rem);
 }
 
 .beskrivelse_section h2 {
-  font-size: clamp(1.9rem, -4rem + 16vw, 4rem);
+  font-size: clamp(1.9rem, -4rem + 16vw, 3rem);
 }
+
+/* +700 TEMA 05 --------------*/
+
+.wrapper {
+  grid-column: 1/3;
+}
+
+/*+700 CV OM MIG SIDEN------------------_*/
 
 .beskrivelse_section_cv {
   display: grid;
@@ -657,6 +675,7 @@ nav a:hover {
 }
 .beskrivelse_section_cv img {
   grid-row: 1/5;
+  background-color: rgba(255, 255, 255, 0);
 }
 .beskrivelse_section_cv h2 {
   grid-row: 2/3;
@@ -665,6 +684,8 @@ nav a:hover {
 .beskrivelse_section_cv h4 {
   grid-row: 3/4;
   color: #ffba00;
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 100;
 }
 #followme {
   display: grid;
@@ -682,25 +703,11 @@ nav a:hover {
 .mysite:hover {
   background-color: white;
   border: 2px solid var(--orange);
+  color: var(--orange);
 }
 #ommig {
   grid-column: 1/3;
-  text-align: center;
-  margin: 6rem auto;
-}
-#hero_section_CV {
-  background-color: #d6d6d6;
-  box-shadow: 3px 3px 8px #888888;
-}
-#orangelinje {
-  grid-column: 1/3;
-  grid-row: 5/6;
-  height: 5px;
   background-color: var(--orange);
-  box-shadow: 3px 3px 8px #888888;
-}
-#orangelinje1 {
-  height: 5px;
-  background-color: var(--orange);
-  box-shadow: 3px 3px 8px #888888;
+  width: 100vw;
+  padding: 50px;
 }
