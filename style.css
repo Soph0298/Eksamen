@@ -15,7 +15,7 @@ main {
   display: grid;
   grid-template-columns:
     minmax(0.5rem, 1fr)
-    minmax(auto, 1200px)
+    minmax(auto, 1000px)
     minmax(0.5rem, 1fr);
   margin-bottom: 50px;
 }
@@ -70,6 +70,13 @@ footer {
   line-height: 2;
   box-shadow: 3px 3px 8px #888888;
 }
+
+.content .text_wrapper {
+  background-color: white;
+  box-shadow: 1px 1px 40px #888;
+  padding: 4rem;
+}
+
 /* TEMAER FORSIDE BELOW --------------------*/
 
 #temaer {
@@ -596,11 +603,6 @@ nav a:hover {
     gap: 5rem;
   }
 
-  .content .text_wrapper {
-    background-color: white;
-    box-shadow: 1px 1px 40px #888;
-    padding: 4rem;
-  }
   /*+700 TEMA04 ------------------_*/
 
   #baggrundsbilleder,
@@ -706,8 +708,17 @@ nav a:hover {
   color: var(--orange);
 }
 #ommig {
-  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   background-color: var(--orange);
-  width: 100vw;
   padding: 50px;
+  box-shadow: 1px 1px 40px #888;
+}
+
+#ommig img {
+  transform: scaleX(-1);
+}
+
+#proto_wrapper {
+  display: grid;
 }
